@@ -28,6 +28,11 @@ def get_one_day():
     date_input.clear()
     date_input.send_keys(f"{DATE_INPUT[0:4]}/{DATE_INPUT[4:6]}/{DATE_INPUT[6:8]}")
     time.sleep(delay_time)
+    # select
+    select_button = driver.find_element(By.CSS_SELECTOR, "button.btn.btn-primary")
+    select_button.click()
+    time.sleep(delay_time)
+    # download
     download_button = driver.find_element(By.ID, "excel")
     download_button.click()
     # submit
