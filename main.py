@@ -43,7 +43,7 @@ else:
     print("NO INPUT DATA FOUND :")
     DATE_INPUT = input("DATE : yyyymmdd OR yyyymm OR yyyy \n")
     REGION_INPUT = input("INSERT REGION CODE \n")
-    REGION_INPUT = input("INSERT STATION CODE \n")
+    STATION_INPUT = input("INSERT STATION CODE \n")
 
 # handle download path
 script_dir = os.path.dirname(os.path.abspath(__file__))
